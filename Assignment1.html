@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <h2>JS Assignment 1</h2>
+        
+        <h4>Today is :</h4>
+        <p id='demo'></p>
+        <h4>Current time is :</h4>
+        <p id='sample1'></p>
+        <p id='sample2'></p>
+        <p id='sample3'></p>
+    </head>
+    <body> 
+        <script>
+            
+           // document.write(getDay(2));
+            //document.writeln('Current Time is');
+            //document.write(Date());
+               var d = new Date();
+               var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+               document.getElementById("demo").innerHTML = days[d.getDay()];
+               var h = new Date();
+               document.getElementById("sample1").innerHTML = h.getHours();
+               var m = new Date();
+               document.getElementById("sample2").innerHTML = m.getMinutes();
+               var s = new Date();
+               document.getElementById("sample3").innerHTML = s.getSeconds();
+
+               
+        </script>
+      
+    </body>
+</html>
