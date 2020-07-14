@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <h2>JS Assignment 3</h2>
+      
+        <p id='sample1'></p>
+        <p id='sample2'></p>
+        <p id='sample3'></p>
+    </head>
+    <body> 
+        <script>
+            
+            //document.write(Date());
+               var h = new Date();
+               document.getElementById("sample1").innerHTML = h.getDate();
+               var m = new Date();
+               var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+               document.getElementById("sample2").innerHTML = m.getMonth();
+               var s = new Date();
+               document.getElementById("sample3").innerHTML = s.getFullYear();    
+        </script>
+      
+    </body>
+</html>
