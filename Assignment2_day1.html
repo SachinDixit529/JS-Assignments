@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <h2>Question 2 : Write the difference between var, let and const with code examples.</h2>
+</head>
+<body>
+    In Javascript one can define variables using the keywords var, let or const.
+    var a=10;
+    let b=20;
+    const PI=3.14;
+    The scope of a variable defined with the keyword “var” is global.
+    The scope of a variable defined with the keyword “let” or “const” is limited to the “block” defined by curly braces i.e. {} .
+    <script>
+        var a=10;
+        console.log(a);
+        {
+ let a=10;
+ console.log(a);
+} //block 1
+{
+  a++;
+  console.log(a);
+} //block 2
+const PI=3.14;
+ console.log(PI);
+ const a = [1,2,3];
+ const b = {name: "hello"};
+ a.push(4,5);     //mutating the value of constant "a"
+ b.name="World";  //mutating the value of constant "b"
+ 
+ console.log(a); //this will show [1,2,3,4,5]
+ console.log(b); //this will show {name: "World"}
+ {
+ const name = "Mike";
+ const PI = 3.14; 
+ const a = [1,2,3];
+ const b = {name: "hello"};
+ 
+ name="Joe"; 
+//this will throw an error, since we are attempting to re-assign "name" to a different value.
+ PI = PI + 1; 
+//this will throw an error, since we are attempting to re-assign PI to a different value.
+ a = [1,2,3,4,5];
+//this will throw an error, since we are attempting to re-assign "a" to a different value.
+ b = {name: "hello"};
+//this will throw an error, since we are attempting to re-assign "b" to a different value.
+}
+    </script>
+</body>
+</html>
